@@ -15,5 +15,5 @@ class LoginPage:
         self.password_input.fill(password)
         self.login_button.click()
 
-    def error_msg(self):
+    def error_msg_visible(self):
         return self.error_message.is_visible()
