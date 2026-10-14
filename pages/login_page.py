@@ -1,7 +1,6 @@
 class LoginPage:
     def __init__(self, page):
         self.page = page
-        # Here we store all our selectors as variables
         self.username_input = page.locator("#user-name")
         self.password_input = page.locator("#password")
         self.login_button = page.locator("#login-button")
