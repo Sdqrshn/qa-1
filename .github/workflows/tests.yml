@@ -25,7 +25,7 @@ jobs:
         run: playwright install --with-deps
 
       - name: Run Pytest
-        run: PYTHONPATH=. pytest --html=report.html
+        run: pytest --html=report.html
 
       - name: Upload Test Report
         uses: actions/upload-artifact@v4
